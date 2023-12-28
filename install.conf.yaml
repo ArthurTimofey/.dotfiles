@@ -21,7 +21,7 @@
     stderr: true
   - 
     description: ✅ Install Packages 
-    command: brew install zsh ripgrep nvim node pnpm lsd 
+    command: brew install zsh ripgrep nvim node pnpm lsd lazygit
     stdout: true
   -
     description: ✅ Install Iterm2
