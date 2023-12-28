@@ -1,5 +1,37 @@
 - clean: ['~']
 
 - link:
+    ~/.zprofile: ./zsh/.zprofile
+    ~/.zshrc: ./zsh/.zshrc
+    ~/.config/nvim: ./.config/nvim
+    ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: ~/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme
 
+- shell:
+  - 
+    description: ✅ Uninstalling brew if exists
+    command: 'command -v brew >/dev/null 2>&1 && (brew list | xargs brew uninstall --force && brew list --cask | xargs brew uninstall --force && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)") || echo "🟡 Brew not found"'
+    stdin: true
+    stdout: true
+    stderr: true
+  - 
+    description: ✅ Installing brew
+    command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    stdin: true
+    stdout: true
+    stderr: true
+  - 
+    description: ✅ Install Packages 
+    command: brew install zsh ripgrep nvim node pnpm lsd 
+    stdout: true
+  -
+    description: ✅ Install Iterm2
+    command: brew list iterm2 && brew reinstall iterm2 || brew install --cask iterm2
+  -
+    description: ✅ Install oh-my-zsh
+    command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  -
+    description: ✅ oh-my-zsh plugins
+    command: git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions & git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting & git clone https://github.com/spaceship-prompt/spaceship-prompt.git ~/.oh-my-zsh/custom/themes/spaceship-prompt --depth=1
+  - description: ✅ install font
+    command: brew tap homebrew/cask-fonts && brew install --cask font-FiraCode-nerd-font
 
