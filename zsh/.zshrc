@@ -11,3 +11,10 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/.dotfiles/zsh/.zshrc.aliases
 
+
+# bun completions
+[ -s "/Users/arturs/.bun/_bun" ] && source "/Users/arturs/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

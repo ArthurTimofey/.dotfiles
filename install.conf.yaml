@@ -32,6 +32,13 @@
   -
     description: ✅ oh-my-zsh plugins
     command: git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions & git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting & git clone https://github.com/spaceship-prompt/spaceship-prompt.git ~/.oh-my-zsh/custom/themes/spaceship-prompt --depth=1
-  - description: ✅ install font
+  - 
+    description: ✅ Install font
     command: brew tap homebrew/cask-fonts && brew install --cask font-FiraCode-nerd-font
+  - 
+    description: ✅ Install bun
+    command: curl -fsSL https://bun.sh/install | bash
+  -
+    description: ✅ Install rust
+    command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
