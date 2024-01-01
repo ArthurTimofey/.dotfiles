@@ -471,9 +471,9 @@ local servers = {
   -- clangd = {},
   -- gopls = {},
   -- pyright = {},
-  -- rust_analyzer = {},
-  -- tsserver = {},
-  -- html = { filetypes = { 'html', 'twig', 'hbs'} },
+  rust_analyzer = {},
+  tsserver = {},
+  html = { filetypes = { 'html', 'twig', 'hbs' } },
 
   lua_ls = {
     Lua = {
@@ -502,6 +502,7 @@ mason_lspconfig.setup {
 require('mason-tool-installer').setup {
   ensure_installed = {
     'stylua',
+    'rustfmt',
   },
 }
 
