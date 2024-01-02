@@ -22,7 +22,7 @@
     stderr: true
   - 
     description: ✅ Install Packages 
-    command: brew install zsh ripgrep nvim node pnpm lsd lazygit 1password-cli tmux
+    command: brew install zsh ripgrep nvim node pnpm lsd lazygit 1password-cli tmux bash
     stdout: true
   -
     description: ✅ Install Iterm2
