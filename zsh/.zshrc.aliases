@@ -1,2 +1,4 @@
 alias l="lsd -all"
 alias vi="nvim"
+alias tmux="tmux -f ~/.config/tmux/tmux.conf"
+

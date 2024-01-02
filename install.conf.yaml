@@ -3,8 +3,9 @@
 - link:
     ~/.zprofile: ./zsh/.zprofile
     ~/.zshrc: ./zsh/.zshrc
-    ~/.config/nvim: ./.config/nvim
     ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: ~/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme
+    ~/.config/nvim: ./.config/nvim
+    ~/.config/tmux: ./.config/tmux
 
 - shell:
   - 
@@ -21,7 +22,7 @@
     stderr: true
   - 
     description: ✅ Install Packages 
-    command: brew install zsh ripgrep nvim node pnpm lsd lazygit 1password-cli
+    command: brew install zsh ripgrep nvim node pnpm lsd lazygit 1password-cli tmux
     stdout: true
   -
     description: ✅ Install Iterm2
