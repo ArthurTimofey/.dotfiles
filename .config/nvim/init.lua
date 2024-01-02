@@ -474,6 +474,7 @@ local servers = {
   rust_analyzer = {},
   tsserver = {},
   html = { filetypes = { 'html', 'twig', 'hbs' } },
+  tailwindcss = {},
 
   lua_ls = {
     Lua = {
@@ -503,6 +504,7 @@ require('mason-tool-installer').setup {
   ensure_installed = {
     'stylua',
     'rustfmt',
+    'prettierd',
   },
 }
 

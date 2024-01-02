@@ -7,6 +7,13 @@ return {
       formatters_by_ft = {
         lua = { 'stylua' },
         rust = { 'rustfmt' },
+        typescript = { { 'prettierd' } },
+        typescriptreact = { { 'prettierd' } },
+        javascript = { { 'prettierd' } },
+        javascriptreact = { { 'prettierd' } },
+        json = { { 'prettierd' } },
+        html = { { 'prettierd' } },
+        css = { { 'prettierd' } },
       },
     }
 
