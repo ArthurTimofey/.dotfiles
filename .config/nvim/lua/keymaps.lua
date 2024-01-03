@@ -50,3 +50,6 @@ map('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earc
 map('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 map('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 map('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
+
+-- copilot
+-- map('n', '<leader>cl', require('copilot.suggestion').toggle_auto_trigger, { desc = '[C]opilot [L]ine' })
