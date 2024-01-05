@@ -53,3 +53,7 @@ map('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [
 
 -- copilot
 -- map('n', '<leader>cl', require('copilot.suggestion').toggle_auto_trigger, { desc = '[C]opilot [L]ine' })
+
+-- toggle term
+map('n', '<leader>tt', '<cmd>ToggleTerm<cr>', { desc = '[T]oggle [T]erminal' })
+map('t', '<esc>', [[<C-\><C-n>]], { desc = 'Exit terminal mode' })
