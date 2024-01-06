@@ -57,6 +57,15 @@ require('lazy').setup({
 
       -- Adds a number of user-friendly snippets
       'rafamadriz/friendly-snippets',
+      {
+        'Saecki/crates.nvim',
+        event = { 'BufRead Cargo.toml' },
+        opts = {
+          src = {
+            cmp = { enabled = true },
+          },
+        },
+      },
     },
   },
 
