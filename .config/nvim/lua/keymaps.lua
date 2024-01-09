@@ -55,4 +55,4 @@ map('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [
 -- map('n', '<leader>cl', require('copilot.suggestion').toggle_auto_trigger, { desc = '[C]opilot [L]ine' })
 
 -- toggle term
-map({ 'n', 't' }, '<c-/>', '<cmd>ToggleTerm<cr>', { desc = '[T]oggle [T]erminal' })
+map({ 'n', 't' }, '<c-t>', '<cmd>ToggleTerm<cr>', { desc = '[T]oggle [T]erminal' })
