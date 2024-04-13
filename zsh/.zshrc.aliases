@@ -2,3 +2,5 @@ alias l="lsd -all"
 alias vi="nvim"
 alias tmux="tmux -f ~/.config/tmux/tmux.conf"
 
+alias aseprite="/Users/arturs/Library/'Application Support'/Steam/steamapps/common/Aseprite/Aseprite.app/Contents/MacOS/aseprite"
+
